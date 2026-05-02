@@ -1,0 +1,80 @@
+/* About section container */
+.about-section {
+  padding: 40px 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* About title styling */
+.about-title {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.about-title::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 3px;
+  background-color: #333;
+}
+
+/* Flexbox layout for image and text */
+.about-content {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+/* Image container */
+.about-image {
+  flex-shrink: 0;
+}
+
+.about-image img {
+  width: 280px;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 8px;
+  background-color: #444;
+}
+
+/* Text section */
+.about-text {
+  flex: 1;
+}
+
+.about-text p {
+  color: #555;
+  line-height: 1.7;
+  margin-bottom: 15px;
+  font-size: 1rem;
+}
+
+.about-text h3 {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 12px;
+  margin-top: 20px;
+}
+
+/* Skill tags */
+.skills-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skill-tag {
+  background-color: #333;
+  color: white;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+}
