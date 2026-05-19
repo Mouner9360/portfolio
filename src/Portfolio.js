@@ -32,6 +32,16 @@ class Portfolio extends Component {
                     <span className="tech-tag" key={i}>{tech}</span>
                   ))}
                 </div>
+                {project.skills && project.skills.length > 0 && (
+                  <div className="project-skills">
+                    <h4 className="skills-label">Skills</h4>
+                    <div className="skills-list">
+                      {project.skills.map((skill, i) => (
+                        <span className="skill-tag" key={i}>{skill}</span>
+                      ))}
+                    </div>
+                  </div>
+                )}
                 <div className="project-buttons">
                   {project.live && (
                     <a href={project.live} className="btn live-btn" target="_blank" rel="noopener noreferrer">Live Demo</a>

@@ -85,6 +85,32 @@
   font-size: 0.8rem;
 }
 
+/* Skills section in project cards */
+.project-skills {
+  margin-bottom: 15px;
+}
+
+.skills-label {
+  font-size: 0.85rem;
+  color: #555;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.project-card .skill-tag {
+  background-color: #333;
+  color: white;
+  padding: 3px 10px;
+  border-radius: 12px;
+  font-size: 0.75rem;
+}
+
 /* Buttons */
 .project-buttons {
   display: flex;
