@@ -1,24 +1,12 @@
 import { Component } from 'react';
 import './Portfolio.css';
+import projectsData from './data/projects.json';
 
 class Portfolio extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      projects: [
-        {
-          project_image: "https://via.placeholder.com/400x200",
-          title: "AI Multi-Agent Web Research System",
-          description: "A system of three AI agents that work together to search the web. A coordinator agent receives the user query, a researcher agent uses MCP Firecrawl to gather information, and a summarizer agent compiles the results.",
-          technologies: ["Python", "AI Agents", "MCP", "Firecrawl"],
-        },
-        {
-          project_image: "https://via.placeholder.com/400x200",
-          title: "AI RAG Agent with MongoDB",
-          description: "A retrieval augmented generation agent that uses MongoDB as a database and Google GenAI to convert text to vectors. It uses vector index search and a custom tool to transform user queries for comparison.",
-          technologies: ["Python", "MongoDB", "Google GenAI", "Vector Search"],
-        },
-      ]
+      projects: projectsData
     };
   }
 
@@ -27,22 +15,30 @@ class Portfolio extends Component {
       <div className="portfolio-section">
         <h2 className="portfolio-title">My Portfolio</h2>
         <div className="projects-container">
-          {this.state.projects.map((project, index) => (
-            <div className="project-card" key={index}>
+          {this.state.projects.map((project) => (
+            <div className="project-card" key={project.id}>
               <div className="project-image">
-                <img src={project.project_image} alt={project.title} />
+                {project.image ? (
+                  <img src={project.image} alt={project.name} />
+                ) : (
+                  <img src="https://via.placeholder.com/400x200" alt={project.name} />
+                )}
               </div>
               <div className="project-info">
-                <h3 className="project-name">{project.title}</h3>
+                <h3 className="project-name">{project.name}</h3>
                 <p className="project-description">{project.description}</p>
                 <div className="project-technologies">
-                  {project.technologies.map((tech, i) => (
+                  {project.tech.map((tech, i) => (
                     <span className="tech-tag" key={i}>{tech}</span>
                   ))}
                 </div>
                 <div className="project-buttons">
-                  <a href="#" className="btn live-btn">Live Demo</a>
-                  <a href="#" className="btn code-btn">View Code</a>
+                  {project.live && (
+                    <a href={project.live} className="btn live-btn" target="_blank" rel="noopener noreferrer">Live Demo</a>
+                  )}
+                  {project.github && (
+                    <a href={project.github} className="btn code-btn" target="_blank" rel="noopener noreferrer">View Code</a>
+                  )}
                 </div>
               </div>
             </div>
