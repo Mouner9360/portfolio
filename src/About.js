@@ -37,6 +37,11 @@ class About extends Component {
               <span className="skill-tag">React</span>
               <span className="skill-tag">GitHub Pages</span>
               <span className="skill-tag">Claude Code</span>
+              <span className="skill-tag">Java</span>
+              <span className="skill-tag">Hadoop</span>
+              <span className="skill-tag">HDFS</span>
+              <span className="skill-tag">MapReduce</span>
+              <span className="skill-tag">AWS EC2</span>
             </div>
           </div>
         </div>

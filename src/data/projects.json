@@ -50,5 +50,18 @@
     "image": "",
     "featured": true,
     "date": "2026-05-20"
+  },
+  {
+    "id": "hadoop-wordcount-bigdata",
+    "name": "Hadoop WordCount - Big Data Analysis",
+    "description": "Deployed a multi-node Apache Hadoop cluster (1 Master, 3 Slaves) on AWS EC2 to perform MapReduce WordCount analysis on Project Gutenberg literary works. Custom Java Mapper/Reducer processes large-scale unstructured text through HDFS and YARN, revealing Power Law word frequency distributions across classic literature.",
+    "tech": ["Java", "Apache Hadoop", "MapReduce", "HDFS", "YARN", "AWS EC2"],
+    "skills": ["Big Data", "Distributed Computing", "Data Engineering", "MapReduce"],
+    "category": "Big Data",
+    "github": "https://github.com/Mouner9360/hadoop-wordcount-bigdata",
+    "live": "",
+    "image": "https://raw.githubusercontent.com/Mouner9360/hadoop-wordcount-bigdata/main/Screenshot%202026-05-20%20172437.png",
+    "featured": true,
+    "date": "2026-05-20"
   }
 ]

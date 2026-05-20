@@ -35,8 +35,9 @@ function Resume() {
   ];
 
   const skills = {
-    "Programming Languages": ["Python", "JavaScript", "HTML5", "CSS3"],
+    "Programming Languages": ["Python", "JavaScript", "Java", "HTML5", "CSS3"],
     "AI & Data Science": ["Machine Learning", "AI Agents", "RAG", "Prompt Engineering", "Data Visualization", "Dash", "Plotly", "Pandas"],
+    "Big Data & Cloud": ["Apache Hadoop", "HDFS", "MapReduce", "YARN", "AWS EC2"],
     "Tools & Technologies": ["MongoDB", "Git", "MCP", "Google GenAI", "VS Code", "Gunicorn", "Render", "React", "GitHub Pages", "Claude Code"]
   };
 
