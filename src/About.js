@@ -34,6 +34,9 @@ class About extends Component {
               <span className="skill-tag">Dash</span>
               <span className="skill-tag">Plotly</span>
               <span className="skill-tag">Pandas</span>
+              <span className="skill-tag">React</span>
+              <span className="skill-tag">GitHub Pages</span>
+              <span className="skill-tag">Claude Code</span>
             </div>
           </div>
         </div>

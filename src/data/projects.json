@@ -37,5 +37,18 @@
     "image": "",
     "featured": true,
     "date": "2026-05-19"
+  },
+  {
+    "id": "portfolio",
+    "name": "Personal Portfolio with Auto-Update Skill",
+    "description": "A React-based portfolio site deployed on GitHub Pages, featuring an automated Claude Code skill that updates the About Me, Projects, and Resume sections every time a new project is launched — eliminating the need to manually edit three separate files per project.",
+    "tech": ["React", "JavaScript", "CSS", "GitHub Pages", "Claude Code"],
+    "skills": ["Frontend Development", "AI Automation", "React", "GitHub Pages"],
+    "category": "Web App",
+    "github": "https://github.com/Mouner9360/portfolio",
+    "live": "https://mouner9360.github.io/portfolio",
+    "image": "",
+    "featured": true,
+    "date": "2026-05-20"
   }
 ]
