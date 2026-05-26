@@ -63,5 +63,18 @@
     "image": "https://raw.githubusercontent.com/Mouner9360/hadoop-wordcount-bigdata/main/Screenshot%202026-05-20%20172437.png",
     "featured": true,
     "date": "2026-05-20"
+  },
+  {
+    "id": "stock-price-prediction",
+    "name": "Stock Price Prediction - Improved Transformer",
+    "description": "A deep learning capstone project predicting next-day stock prices using an improved transformer model with wavelet denoising, adaptive time windows, and convolution-enhanced self-attention. Achieved a 55.8% trade win rate and 17%+ annualized simulated profit on Verizon (VZ) stock over 252 test days. Includes FinBERT sentiment analysis pipeline and LSTM baselines.",
+    "tech": ["Python", "PyTorch", "TensorFlow", "FinBERT", "Pandas", "scikit-learn"],
+    "skills": ["Deep Learning", "Time Series Forecasting", "NLP", "Feature Engineering", "Financial Modeling"],
+    "category": "AI / Machine Learning",
+    "github": "https://github.com/Mouner9360/Stock-Price-Prediction",
+    "live": "",
+    "image": "",
+    "featured": true,
+    "date": "2026-05-26"
   }
 ]

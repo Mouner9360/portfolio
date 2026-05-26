@@ -42,6 +42,11 @@ class About extends Component {
               <span className="skill-tag">HDFS</span>
               <span className="skill-tag">MapReduce</span>
               <span className="skill-tag">AWS EC2</span>
+              <span className="skill-tag">PyTorch</span>
+              <span className="skill-tag">TensorFlow</span>
+              <span className="skill-tag">Deep Learning</span>
+              <span className="skill-tag">NLP</span>
+              <span className="skill-tag">scikit-learn</span>
             </div>
           </div>
         </div>
