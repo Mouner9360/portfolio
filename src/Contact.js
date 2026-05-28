@@ -10,6 +10,12 @@ function Contact() {
       icon: '📧'
     },
     {
+      title: 'Phone',
+      detail: '(732) 791-6041',
+      link: 'tel:7327916041',
+      icon: '📞'
+    },
+    {
       title: 'Location',
       detail: 'East Brunswick, New Jersey',
       link: null,

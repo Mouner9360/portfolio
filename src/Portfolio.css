@@ -1,7 +1,7 @@
 /* Portfolio section */
 .portfolio-section {
-  padding: 40px 20px;
-  max-width: 1000px;
+  padding: var(--section-padding);
+  max-width: var(--container-max);
   margin: 0 auto;
 }
 
@@ -9,7 +9,7 @@
 .portfolio-title {
   text-align: center;
   font-size: 2.5rem;
-  color: #333;
+  color: var(--text-primary);
   margin-bottom: 40px;
   position: relative;
 }
@@ -22,7 +22,8 @@
   transform: translateX(-50%);
   width: 60px;
   height: 3px;
-  background-color: #333;
+  background-color: var(--accent);
+  border-radius: 2px;
 }
 
 /* Flexbox container for project cards */
@@ -35,20 +36,50 @@
 
 /* Individual project card */
 .project-card {
-  background-color: white;
-  border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  background-color: var(--bg-card);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-md);
   overflow: hidden;
   width: 45%;
   min-width: 300px;
+  transition: transform var(--transition-base), box-shadow var(--transition-base);
+  border: 1px solid var(--border-color);
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-hover);
 }
 
 /* Project image */
+.project-image {
+  overflow: hidden;
+}
+
 .project-image img {
   width: 100%;
   height: 200px;
   object-fit: cover;
-  background-color: #ddd;
+  background-color: var(--bg-tag);
+  transition: transform var(--transition-slow);
+}
+
+.project-card:hover .project-image img {
+  transform: scale(1.05);
+}
+
+/* Gradient fallback for missing images */
+.project-image-placeholder {
+  width: 100%;
+  height: 200px;
+  background: linear-gradient(135deg, var(--accent), #7c3aed);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 2.5rem;
+  font-family: var(--font-heading);
+  font-weight: 700;
 }
 
 /* Project info section */
@@ -58,12 +89,12 @@
 
 .project-name {
   font-size: 1.3rem;
-  color: #333;
+  color: var(--text-primary);
   margin-bottom: 10px;
 }
 
 .project-description {
-  color: #666;
+  color: var(--text-secondary);
   font-size: 0.95rem;
   line-height: 1.5;
   margin-bottom: 15px;
@@ -78,11 +109,20 @@
 }
 
 .tech-tag {
-  background-color: #e9ecef;
-  color: #333;
+  background-color: var(--accent-light);
+  color: var(--accent);
   padding: 4px 12px;
-  border-radius: 15px;
+  border-radius: var(--radius-full);
   font-size: 0.8rem;
+  font-weight: 500;
+  transition: background-color var(--transition-fast), color var(--transition-fast), transform var(--transition-fast);
+  cursor: default;
+}
+
+.tech-tag:hover {
+  background-color: var(--accent);
+  color: #fff;
+  transform: translateY(-2px);
 }
 
 /* Skills section in project cards */
@@ -92,7 +132,7 @@
 
 .skills-label {
   font-size: 0.85rem;
-  color: #555;
+  color: var(--text-secondary);
   margin-bottom: 8px;
   font-weight: 600;
 }
@@ -104,11 +144,18 @@
 }
 
 .project-card .skill-tag {
-  background-color: #333;
-  color: white;
+  background-color: var(--bg-tag);
+  color: var(--text-primary);
   padding: 3px 10px;
   border-radius: 12px;
   font-size: 0.75rem;
+  font-weight: 500;
+  transition: background-color var(--transition-fast), color var(--transition-fast);
+}
+
+.project-card .skill-tag:hover {
+  background-color: var(--accent);
+  color: #fff;
 }
 
 /* Buttons */
@@ -119,18 +166,71 @@
 
 .btn {
   padding: 8px 20px;
-  border-radius: 5px;
+  border-radius: var(--radius-sm);
   text-decoration: none;
   font-size: 0.9rem;
+  font-weight: 500;
   cursor: pointer;
+  transition: transform var(--transition-fast), box-shadow var(--transition-fast), background-color var(--transition-fast);
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-sm);
 }
 
 .live-btn {
-  background-color: #333;
-  color: white;
+  background-color: var(--accent);
+  color: #fff;
+}
+
+.live-btn:hover {
+  background-color: var(--accent-hover);
 }
 
 .code-btn {
-  background-color: #555;
-  color: white;
+  background-color: var(--bg-tag);
+  color: var(--text-primary);
+  border: 1px solid var(--border-color);
+}
+
+.code-btn:hover {
+  background-color: var(--accent);
+  color: #fff;
+  border-color: var(--accent);
+}
+
+.video-btn {
+  background-color: #1e3a5f;
+  color: #fff;
+}
+
+.video-btn:hover {
+  background-color: #152d4a;
+}
+
+/* ===== Mobile ===== */
+@media (max-width: 768px) {
+  .project-card {
+    width: 100%;
+    min-width: unset;
+  }
+
+  .portfolio-title {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .portfolio-section {
+    padding: 40px 15px;
+  }
+
+  .project-buttons {
+    flex-direction: column;
+  }
+
+  .btn {
+    text-align: center;
+  }
 }

@@ -1,27 +1,32 @@
-import { Component } from 'react';
 import './Portfolio.css';
 import projectsData from './data/projects.json';
+import projectImages from './assets/projects/index';
 
-class Portfolio extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      projects: projectsData
-    };
-  }
+function Portfolio() {
+  const getProjectImage = (project) => {
+    // 1. Local asset (if mapped)
+    if (projectImages[project.id]) return projectImages[project.id];
+    // 2. URL from JSON
+    if (project.image) return project.image;
+    // 3. null -> use gradient placeholder
+    return null;
+  };
 
-  render() {
-    return (
-      <div className="portfolio-section">
-        <h2 className="portfolio-title">My Portfolio</h2>
-        <div className="projects-container">
-          {this.state.projects.map((project) => (
+  return (
+    <div className="portfolio-section">
+      <h2 className="portfolio-title">My Portfolio</h2>
+      <div className="projects-container">
+        {projectsData.map((project) => {
+          const imgSrc = getProjectImage(project);
+          return (
             <div className="project-card" key={project.id}>
               <div className="project-image">
-                {project.image ? (
-                  <img src={project.image} alt={project.name} />
+                {imgSrc ? (
+                  <img src={imgSrc} alt={project.name} />
                 ) : (
-                  <img src="https://via.placeholder.com/400x200" alt={project.name} />
+                  <div className="project-image-placeholder">
+                    {project.name.charAt(0)}
+                  </div>
                 )}
               </div>
               <div className="project-info">
@@ -49,14 +54,17 @@ class Portfolio extends Component {
                   {project.github && (
                     <a href={project.github} className="btn code-btn" target="_blank" rel="noopener noreferrer">View Code</a>
                   )}
+                  {project.video && (
+                    <a href={project.video} className="btn video-btn" target="_blank" rel="noopener noreferrer">Watch Video</a>
+                  )}
                 </div>
               </div>
             </div>
-          ))}
-        </div>
+          );
+        })}
       </div>
-    );
-  }
+    </div>
+  );
 }
 
 export default Portfolio;
