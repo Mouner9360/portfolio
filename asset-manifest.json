@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.16c3b16a.css",
-    "main.js": "/portfolio/static/js/main.303d01c9.js",
+    "main.js": "/portfolio/static/js/main.4c96984d.js",
     "static/media/profile.jpg": "/portfolio/static/media/profile.5f284abff2afb0afbe4a.jpg",
     "static/media/MounerWissaR.pdf": "/portfolio/static/media/MounerWissaR.3cff963197f37c45d19a.pdf",
     "static/media/ai-rag-agent-mongodb.png": "/portfolio/static/media/ai-rag-agent-mongodb.61bd8cdeec0f6d38a095.png",
@@ -9,10 +9,10 @@
     "static/media/stock-price-prediction.png": "/portfolio/static/media/stock-price-prediction.0b40641a1466b2475c63.png",
     "index.html": "/portfolio/index.html",
     "main.16c3b16a.css.map": "/portfolio/static/css/main.16c3b16a.css.map",
-    "main.303d01c9.js.map": "/portfolio/static/js/main.303d01c9.js.map"
+    "main.4c96984d.js.map": "/portfolio/static/js/main.4c96984d.js.map"
   },
   "entrypoints": [
     "static/css/main.16c3b16a.css",
-    "static/js/main.303d01c9.js"
+    "static/js/main.4c96984d.js"
   ]
 }
