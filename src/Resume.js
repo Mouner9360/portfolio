@@ -54,7 +54,7 @@ function Resume() {
     "Programming Languages": ["Python", "JavaScript", "Java", "HTML5", "CSS3"],
     "AI & Data Science": ["Machine Learning", "Deep Learning", "AI Agents", "RAG", "NLP", "Prompt Engineering", "Data Visualization", "Time Series Forecasting", "Dash", "Plotly", "Pandas", "scikit-learn"],
     "Big Data & Cloud": ["Apache Hadoop", "HDFS", "MapReduce", "YARN", "AWS EC2"],
-    "Tools & Technologies": ["MongoDB", "Git", "MCP", "Google GenAI", "VS Code", "Gunicorn", "Render", "React", "GitHub Pages", "Claude Code", "PyTorch", "TensorFlow"]
+    "Tools & Technologies": ["MongoDB", "Git", "MCP", "Google GenAI", "VS Code", "Gunicorn", "Render", "React", "GitHub Pages", "Claude Code", "PyTorch", "TensorFlow", "FFmpeg", "HyperFrames", "Composio MCP"]
   };
 
   return (

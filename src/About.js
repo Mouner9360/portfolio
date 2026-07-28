@@ -49,6 +49,11 @@ function About() {
             <span className="skill-tag">Deep Learning</span>
             <span className="skill-tag">NLP</span>
             <span className="skill-tag">scikit-learn</span>
+            <span className="skill-tag">Video Editing</span>
+            <span className="skill-tag">FFmpeg</span>
+            <span className="skill-tag">Motion Graphics</span>
+            <span className="skill-tag">HyperFrames</span>
+            <span className="skill-tag">Composio MCP</span>
           </div>
         </div>
       </div>

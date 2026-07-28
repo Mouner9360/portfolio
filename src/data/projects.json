@@ -66,6 +66,19 @@
     "date": "2026-05-20"
   },
   {
+    "id": "claude-skills",
+    "name": "Claude Code Skills Collection",
+    "description": "Three custom Claude Code skills I built for daily use: a fitness coach that generates personalized weekly diet plans with verified grocery prices, a conversational video editor with frame-accurate cuts and motion graphics, and a project launch pipeline that ships repos, updates my portfolio, and posts to social media — all from one command.",
+    "tech": ["Claude Code", "Python", "FFmpeg", "HyperFrames", "Composio MCP", "python-pptx", "React", "GitHub Pages"],
+    "skills": ["AI Automation", "Prompt Engineering", "Skill Design", "Video Editing", "Motion Graphics"],
+    "category": "AI Tool",
+    "github": "https://github.com/Mouner9360/claude-skills",
+    "live": "",
+    "image": "",
+    "featured": true,
+    "date": "2026-07-27"
+  },
+  {
     "id": "stock-price-prediction",
     "name": "Stock Price Prediction - Improved Transformer",
     "description": "A deep learning capstone project predicting next-day stock prices using an improved transformer model with wavelet denoising, adaptive time windows, and convolution-enhanced self-attention. Achieved a 55.8% trade win rate and 17%+ annualized simulated profit on Verizon (VZ) stock over 252 test days. Includes FinBERT sentiment analysis pipeline and LSTM baselines.",
