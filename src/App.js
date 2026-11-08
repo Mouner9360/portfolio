@@ -5,6 +5,7 @@ import Portfolio from './Portfolio';
 import Resume from './Resume';
 import Contact from './Contact';
 import Hero from './Hero';
+import Agency from './Agency';
 
 function App() {
   const [currentComponent, setCurrentComponent] = useState('about');
@@ -55,6 +56,12 @@ function App() {
               Portfolio
             </p>
             <p
+              className={currentComponent === 'agency' ? 'nav-active' : ''}
+              onClick={() => handleNavClick('agency')}
+            >
+              Agency
+            </p>
+            <p
               className={currentComponent === 'resume' ? 'nav-active' : ''}
               onClick={() => handleNavClick('resume')}
             >
@@ -86,6 +93,7 @@ function App() {
           </>
         )}
         {currentComponent === 'portfolio' && <Portfolio />}
+        {currentComponent === 'agency' && <Agency />}
         {currentComponent === 'resume' && <Resume />}
         {currentComponent === 'contact' && <Contact />}
       </div>

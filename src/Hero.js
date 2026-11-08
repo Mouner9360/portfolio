@@ -3,6 +3,8 @@ import './Hero.css';
 
 const titles = [
   'AI Engineer',
+  'Founder @ Wissa Systems',
+  'Forward Deployed Engineer',
   'ML Enthusiast',
   'Full-Stack Builder',
   'Data Science Graduate',
@@ -54,6 +56,11 @@ function Hero({ onNavigate }) {
         </p>
         <p className="hero-tagline">
           Building intelligent solutions at the intersection of AI, data, and software engineering.
+          Founder of{' '}
+          <a href="https://wissasystems.com" target="_blank" rel="noopener noreferrer" className="hero-agency-link">
+            Wissa Systems
+          </a>
+          , an AI agency shipping chatbots and voice agents for real businesses.
         </p>
         <div className="hero-cta">
           <button
@@ -61,6 +68,12 @@ function Hero({ onNavigate }) {
             onClick={() => onNavigate('portfolio')}
           >
             View My Work
+          </button>
+          <button
+            className="hero-btn hero-btn-secondary"
+            onClick={() => onNavigate('agency')}
+          >
+            Agency Demos
           </button>
           <button
             className="hero-btn hero-btn-secondary"

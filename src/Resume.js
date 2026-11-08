@@ -5,37 +5,51 @@ import resumePdf from './assets/MounerWissaR.pdf';
 function Resume() {
   const education = [
     {
-      degree: "Bachelor of Science in Data Science",
-      school: "New Jersey Institute of Technology",
-      year: "2023-2026",
+      degree: "B.S. Data Science (Computing)",
+      school: "New Jersey Institute of Technology (NJIT)",
+      year: "Graduated May 2026",
       gpa: "3.5/4.0"
     },
     {
-      degree: "Computer Science",
-      school: "Middlesex County College",
-      year: "2022-2023",
+      degree: "Associate Degree, Computer Science",
+      school: "Middlesex Community College",
+      year: "Graduated May 2023",
       gpa: "3.85/4.0"
     }
   ];
 
   const experience = [
     {
-      title: "AR Researcher",
-      company: "NJIT",
+      title: "Founder",
+      company: "Wissa Systems",
+      link: "https://wissasystems.com",
+      period: "August 2026 - Present",
+      responsibilities: [
+        "Founded an AI agency that builds and deploys autonomous lead-capturing agents (chatbots, voice agents and email automations) for small businesses",
+        "Own the full technical sales cycle: prospecting, discovery calls, live product demos, proposals, closing and client follow-ups",
+        "Translate client business problems into scoped technical solutions and communicate requirements, timelines and results to non-technical stakeholders",
+        "Built and deployed a social media DM agent for a fitness influencer using the Claude SDK and OpenRouter, automating responses across Instagram and Facebook Messenger on a self-hosted server",
+        "Built and deployed an email automation agent for a retreat center, handling inbound inquiries through Gmail and Microsoft integrations",
+        "Manage project delivery end to end, from deployment to ongoing support and iteration based on client feedback"
+      ]
+    },
+    {
+      title: "Research Assistant",
+      company: "VR/AR Lab, NJIT",
       period: "January 2026 - Present",
       responsibilities: [
-        "Developed immersive VR/AR simulations using Unity and C#, architecting real-time data synchronization between head-mounted displays and external servers",
-        "Leveraged Git for version control and performed rigorous debugging of C# scripts to maintain system stability across multiple hardware iterations"
+        "Develop immersive VR/AR simulations using Unity and C#, architecting real-time data synchronization between head-mounted displays and external servers",
+        "Maintain system stability across multiple hardware iterations through version control with Git and rigorous debugging of C# scripts"
       ]
     },
     {
       title: "Sales Associate",
-      company: "NOA Jewelers",
-      period: "2023",
+      company: "Noa Jewelers",
+      period: "October 2021 - October 2022",
       responsibilities: [
-        "Assisted customers with selecting jewelry and provided product recommendations",
-        "Managed inventory and organized display cases to attract customers",
-        "Processed sales transactions and handled customer inquiries"
+        "Drove sales strategy alignment that helped the team exceed targets by 10% for consecutive quarters",
+        "Delivered product knowledge training to new hires, improving team consistency and effectiveness",
+        "Built customer relationships through consultative selling, matching product recommendations to each client's needs"
       ]
     },
     {
@@ -43,18 +57,20 @@ function Resume() {
       company: "Shake Shack",
       period: "2022-2023",
       responsibilities: [
-        "Prepared food items following company recipes and quality standards",
-        "Worked in a fast-paced environment while maintaining food safety practices",
+        "Worked in a fast-paced, customer-facing environment while maintaining food safety and quality standards",
         "Collaborated with team members to ensure efficient order fulfillment"
       ]
     }
   ];
 
   const skills = {
-    "Programming Languages": ["Python", "JavaScript", "Java", "HTML5", "CSS3"],
-    "AI & Data Science": ["Machine Learning", "Deep Learning", "AI Agents", "RAG", "NLP", "Prompt Engineering", "Data Visualization", "Time Series Forecasting", "Dash", "Plotly", "Pandas", "scikit-learn"],
-    "Big Data & Cloud": ["Apache Hadoop", "HDFS", "MapReduce", "YARN", "AWS EC2"],
-    "Tools & Technologies": ["MongoDB", "Git", "MCP", "Google GenAI", "VS Code", "Gunicorn", "Render", "React", "GitHub Pages", "Claude Code", "PyTorch", "TensorFlow", "FFmpeg", "HyperFrames", "Composio MCP"]
+    "AI & Agentic Systems": ["AI Agents", "Multi-Agent Orchestration (Google ADK)", "Agentic RAG", "MCP", "Claude SDK", "OpenRouter", "Gemini", "Voice Agents", "Chatbots", "Prompt Engineering", "Semantic Search", "Vector Embeddings", "Firecrawl", "NLP"],
+    "Sales & Communication": ["Technical Sales", "Discovery Calls", "Live Product Demos", "Lead Qualification", "Client Communication", "Requirements Scoping", "Stakeholder Management", "Project Delivery", "Consultative Selling", "Team Training"],
+    "Programming Languages": ["Python", "JavaScript", "SQL", "Java", "C/C++", "R", "Bash/Linux", "C# (Unity)", "HTML5", "CSS3"],
+    "Machine Learning & Data Science": ["Machine Learning", "Deep Learning", "PyTorch", "TensorFlow", "scikit-learn", "XGBoost", "Random Forest", "SHAP", "Time Series Forecasting", "Hyperparameter Tuning", "Pandas", "NumPy", "Data Visualization", "Dash", "Plotly"],
+    "Cloud & Big Data": ["Google Cloud Platform (GCP)", "AWS (EC2/S3)", "Docker", "Self-Hosted Deployment", "Apache Hadoop", "HDFS", "MapReduce", "YARN", "ETL Pipelines"],
+    "Databases & BI": ["MongoDB Atlas (Vector Search)", "MySQL", "Tableau", "Power BI", "Matplotlib", "Seaborn"],
+    "Tools & Technologies": ["Git", "GitHub", "Claude Code", "Composio MCP", "Gmail & Microsoft APIs", "Unity", "React", "GitHub Pages", "Gunicorn", "Render", "VS Code", "FFmpeg", "HyperFrames"]
   };
 
   return (
@@ -102,7 +118,12 @@ function Resume() {
                   <div className="timeline-marker"></div>
                   <div className="timeline-content">
                     <h4 className="item-title">{exp.title}</h4>
-                    <p className="item-subtitle">{exp.company} ({exp.period})</p>
+                    <p className="item-subtitle">
+                      {exp.link ? (
+                        <a href={exp.link} target="_blank" rel="noopener noreferrer" className="item-company-link">{exp.company}</a>
+                      ) : exp.company}{' '}
+                      ({exp.period})
+                    </p>
                     <ul className="responsibilities">
                       {exp.responsibilities.map((resp, respIndex) => (
                         <li key={respIndex}>{resp}</li>

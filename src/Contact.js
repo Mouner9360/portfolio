@@ -48,6 +48,9 @@ function Contact() {
               <a href="https://www.linkedin.com/in/mouner-wissa-8493a1282" className="social-link linkedin">
                 <span className="social-icon">💼</span> LinkedIn
               </a>
+              <a href="https://wissasystems.com" className="social-link agency" target="_blank" rel="noopener noreferrer">
+                <span className="social-icon">🤖</span> Wissa Systems
+              </a>
             </div>
           </div>
         </div>

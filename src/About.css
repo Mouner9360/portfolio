@@ -128,3 +128,13 @@
     height: 220px;
   }
 }
+
+.about-text a {
+  color: var(--accent);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.about-text a:hover {
+  text-decoration: underline;
+}

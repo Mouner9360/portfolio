@@ -237,3 +237,13 @@
     padding: 1rem;
   }
 }
+
+.item-company-link {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.item-company-link:hover {
+  text-decoration: underline;
+}

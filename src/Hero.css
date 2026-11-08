@@ -166,3 +166,14 @@
     text-align: center;
   }
 }
+
+.hero-agency-link {
+  color: inherit;
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.hero-agency-link:hover {
+  opacity: 0.8;
+}

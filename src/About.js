@@ -19,6 +19,14 @@ function About() {
             building smart solutions and learning how machines can understand and process data.
           </p>
           <p>
+            I'm also the founder of{' '}
+            <a href="https://wissasystems.com" target="_blank" rel="noopener noreferrer">Wissa Systems</a>,
+            an AI agency where I build and deploy chatbots, voice agents and automations for real
+            businesses. I handle the whole process myself: the sales conversations, scoping the problem
+            with the client, building the system, and supporting it after launch.{' '}
+            <a href="https://wissasystems.com/demos" target="_blank" rel="noopener noreferrer">Try the live demos</a>.
+          </p>
+          <p>
             I am currently exploring areas like AI agents, prompt engineering, and retrieval
             augmented generation. I like working on projects that combine machine learning
             with real-world applications and I am always looking to improve my skills.
@@ -54,6 +62,18 @@ function About() {
             <span className="skill-tag">Motion Graphics</span>
             <span className="skill-tag">HyperFrames</span>
             <span className="skill-tag">Composio MCP</span>
+            <span className="skill-tag">Claude SDK</span>
+            <span className="skill-tag">Google ADK</span>
+            <span className="skill-tag">OpenRouter</span>
+            <span className="skill-tag">Voice Agents</span>
+            <span className="skill-tag">GCP</span>
+            <span className="skill-tag">Docker</span>
+            <span className="skill-tag">SQL</span>
+            <span className="skill-tag">XGBoost</span>
+            <span className="skill-tag">Unity (C#)</span>
+            <span className="skill-tag">Technical Sales</span>
+            <span className="skill-tag">Client Communication</span>
+            <span className="skill-tag">Product Demos</span>
           </div>
         </div>
       </div>
